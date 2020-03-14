@@ -297,6 +297,7 @@
     }
   }
 </style>
+  <link rel="manifest" href="manifest.json">
 
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
@@ -316,6 +317,7 @@
 </div>
 
 <div class="content" role="main">
+  {{ message | async | json }}
 
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
